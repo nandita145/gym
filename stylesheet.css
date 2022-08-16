@@ -454,6 +454,14 @@ background: linear-gradient(228deg, rgba(170,166,255,1) 0%, rgba(40,31,245,1) 10
     border-radius: 100px;
     margin-right: 8px;
 }
+@media (max-width: 800px) {
+    .avatar{
+        width: 50px;
+        border-radius: 100px;
+        margin-right: 8px;
+    }
+}
+
 .card .row{
     align-items: center;
 }
@@ -549,16 +557,26 @@ button{
 .contact-section h3{
     font-size: 35px;
 }
+.flex-container {
+    display: flex;
+    align-items: stretch;
+    /* background-color: #f1f1f1; */
+  }
 
-.flex3 {
-    flex: 3;
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+/* .flex3 {
+    flex: 4;
 }
 .flex1 {
-    flex: 1;
+    flex: 2;
     align-items: center;
     justify-content: center;
     align-self: center;
-  }
+  } */
 
 hr{
     max-width: 90%;
@@ -589,6 +607,11 @@ ul{
 .footer{
 	background-color: var(--black);
     padding: 70px 0;
+}
+
+.footer .row{
+    display: flex;
+	flex-wrap: wrap;
 }
 .footer-col{
    width: 25%;

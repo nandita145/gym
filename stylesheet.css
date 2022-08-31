@@ -45,6 +45,7 @@ header{
 .menu-btn{
     background-color: transparent;
     width: 15px;
+	border: none;
 }  
 
 .nav__links {

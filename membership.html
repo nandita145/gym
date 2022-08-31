@@ -29,7 +29,14 @@
             </ul>
         </nav>
         <a href="login.html" class="cta"><button class="btn-purple">Login</button></a>
-        <a onclick="openNav()" class="menu" href="#"><button class="btn-purple">Menu</button></a>
+        <a href="login.html" class="cta"><button class="btn-purple">Login</button></a>
+        <a onclick="openNav()" class="menu" href="#"><button class="menu-btn">
+                <h2><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg></h1>
+            </button></a>
     </header>
 
     <div id="mobile__menu" class="overlay">
@@ -71,15 +78,18 @@
                     <label class="col-lg-3" for="">Select Plan</label>
                     <div class="col-lg-6 d-flex ">
                         <div class="mx-2 ">
-                            <input class="radio" type="radio" required name="plan" value="1" onclick="checkRadio(value)"/>
+                            <input class="radio" type="radio" required name="plan" value="1"
+                                onclick="checkRadio(value)" />
                             <label for="">1 month</label>
                         </div>
                         <div class="mx-2">
-                            <input class="radio" type="radio" required name="plan" value="6" onclick="checkRadio(value)"/>
+                            <input class="radio" type="radio" required name="plan" value="6"
+                                onclick="checkRadio(value)" />
                             <label for="">6 months</label>
                         </div>
                         <div class="mx-2">
-                            <input class="radio" type="radio" required name="plan" value="12" onclick="checkRadio(value)"/>
+                            <input class="radio" type="radio" required name="plan" value="12"
+                                onclick="checkRadio(value)" />
                             <label for="">12 months</label>
                         </div>
                     </div>
@@ -87,8 +97,8 @@
                 <div class="align-items-baseline">
                     <p id="price-checkout"></p>
                     <!-- <span id="price"></span> -->
-                <input class="mt-4" type="checkbox" name="" id="" required>Proceed to checkout
-            </div>
+                    <input class="mt-4" type="checkbox" name="" id="" required>Proceed to checkout
+                </div>
                 <button class="animated-btn fadeIn fourth">Submit</button>
             </form>
         </div>

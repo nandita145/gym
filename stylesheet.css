@@ -42,7 +42,10 @@ header{
 
 }
 
-  
+.menu-btn{
+    background-color: transparent;
+    width: 15px;
+}  
 
 .nav__links {
     width: 100%;

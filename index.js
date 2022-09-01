@@ -30,10 +30,6 @@ function checkRadio(value) {
 
 
 
-$('[data-toggle="counter-up"]').counterUp({
-    delay: 10,
-    time: 2000
-});
 
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
@@ -50,9 +46,10 @@ function myFunction() {
   }
 
 
-  const form = document.querySelector('form');
 
-  form.addEventListener('submit', function(e){
+const form = document.querySelector('form');
+
+form.addEventListener('submit', function(e){
       e.preventDefault();
       
       const height = parseInt(document.querySelector('#height').value);

@@ -10,9 +10,12 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link href="bootstrap-grid.min.css" rel="stylesheet">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -74,58 +77,99 @@
 
 
 
-    <div class="container">
-        <div class="membership-form">
 
-            <form action="">
-                <div class="user-box fadeIn second">
-                    <input type="text" name="" required="" />
-                    <label for="">Name</label>
-                </div>
-                <div class="user-box fadeIn third">
-                    <input type="tel" name="" required="" />
-                    <label for="">Phone Number</label>
-                </div>
-                <div class="user-box fadeIn third">
-                    <input type="tel" name="" required="" />
-                    <label for="">Email</label>
-                </div>
-                <div class="user-box fadeIn third">
-                    <input type="tel" name="" required="" />
-                    <label for="">Address</label>
-                </div>
-                <div class="row ">
-
-                    <label class="col-lg-3" for="">Select Plan</label>
-                    <div class="col-lg-6 d-flex ">
-                        <div class="mx-2 ">
-                            <input class="radio" type="radio" required name="plan" value="1"
-                                onclick="checkRadio(value)" />
-                            <label for="">1 month</label>
-                        </div>
-                        <div class="mx-2">
-                            <input class="radio" type="radio" required name="plan" value="6"
-                                onclick="checkRadio(value)" />
-                            <label for="">6 months</label>
-                        </div>
-                        <div class="mx-2">
-                            <input class="radio" type="radio" required name="plan" value="12"
-                                onclick="checkRadio(value)" />
-                            <label for="">12 months</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="align-items-baseline">
-                    <p id="price-checkout"></p>
-                    <!-- <span id="price"></span> -->
-                    <input class="mt-4" type="checkbox" name="" id="" required>Proceed to checkout
-                </div>
-                <button class="animated-btn fadeIn fourth">Submit</button>
-            </form>
+<section>
+    <div class="contact-section-container p-4 container">
+        <h2>Timetable</h2>
+        <div class="table">
+            <table class="">
+                <thead class="text-white text-center">
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <th class=" text-white align-middle">6.00am - 8.00am</th>
+                        <td>
+                            <h5>Cardio</h5>
+                        </td>
+                        <td></td>
+                        <td>
+                            <h5>Crossfit</h5>
+                        </td>
+                        <td></td>
+                        <td>
+                            <h5>Power Lifting</h5>
+                        </td>
+                        <td></td>
+                        <td>
+                            <h5>Cardio</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class=" text-white align-middle">10.00am - 12.00am</th>
+                        <td></td>
+                        <td>
+                            <h5>Power Lifting</h5>
+                        </td>
+                        <td></td>
+                        <td>
+                            <h5>Cardio</h5>
+                        </td>
+                        <td></td>
+                        <td>
+                            <h5>Crossfit</h5>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th class=" text-white align-middle">5.00pm - 7.00pm</th>
+                        <td>
+                            <h5>Crossfit</h5>
+                        </td>
+                        <td></td>
+                        <td>
+                            <h5>Power Lifting</h5>
+                        </td>
+                        <td></td>
+                        <td>
+                            <h5>Cardio</h5>
+                        </td>
+                        <td></td>
+                        <td>
+                            <h5>Crossfit</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class=" text-white align-middle">7.00pm - 9.00pm</th>
+                        <td></td>
+                        <td>
+                            <h5>Cardio</h5> 
+                        </td>
+                        <td></td>
+                        <td>
+                            <h5>Crossfit</h5>
+                        </td>
+                        <td></td>
+                        <td>
+                            <h5>Power Lifting</h5>
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
-    </div>
-
+</section>
+    <!-- Class Timetable Section End -->
 
 
     <footer class="footer">
@@ -166,6 +210,7 @@
             </div>
         </div>
     </footer>
+
 
     <script type="text/javascript" src="index.js"></script>
 </body>

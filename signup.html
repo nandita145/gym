@@ -19,105 +19,60 @@
 
 
   <header>
+    <a href="index.html">FitClick</a>
 
-    <p>FitClick</p>
     <nav>
-      <ul class="nav__links">
-        <li><a class="list-link" href="index.html">Home</a></li>
-        <li><a class="list-link" href="services.html">Services</a></li>
-        <li><a class="list-link" href="services.html#pricing">Pricing</a></li>
-        <li><a class="list-link" href="contact.html">Contact</a></li>
-
-      </ul>
-    </nav>
-    <!-- <a href="login.html" class="cta"><button class="btn-purple">Login</button></a> -->
-    <a href="login.html" class="cta"><button class="btn-purple">Login</button></a>
-    <a onclick="openNav()" class="menu" href="#"><button class="menu-btn">
-        <h2><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-          </svg></h1>
-      </button></a>
-  </header>
-
-  <div id="mobile__menu" class="overlay">
-    <a class="close" onclick="closeNav()">&times;</a>
-    <div class="overlay__content">
-      <a class="list-link" href="index.html">Home</a>
-      <a class="list-link" href="services.html">Services</a>
-      <a class="list-link" href="services.html#pricing">Pricing</a>
-      <a class="list-link" href="contact.html">Contact</a>
-
-      <a href="login.html" class="cta"><button class="btn-purple">Login</button></a>
-    </div>
-  </div>
-
-
-
-  <!-- Contact Section Begin -->
-  <!-- <div class="container login-section">
-
-        <div class="row">
-            <div class="col-lg-6">
-                <img src="images/login.png" class="login-image">
-            </div>
-            <div class="col-lg-6 contact-section-container p-4">
-                <div class="leave-comment">
-                    <h2 class="center">Login</h2>
-                    <form action="#">
-                        <label for="Email">Email</label>
-                        <input type="text" placeholder="">
-                        <label for="Email">Password</label>
-                        <input type="text" placeholder="">
-                        <button class="btn-purple" type="submit">Submit</button>
-                    </form>
-                    <p>Don't have an account? <a href="signup.html"><u>Sign Up</u></a> Now</p>
+        <ul class="nav__links">
+            <li><a class="list-link" href="index.html">Home</a></li>
+            <li><a class="list-link" href="services.html">Services</a></li>
+            <li><a class="list-link" href="services.html#pricing">Pricing</a></li>
+            <li><a class="list-link" href="contact.html">Contact</a></li>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Pages
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                      </svg>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a class="list-link" href="bmi.html">BMI Calculator</a>
+                    <a class="list-link" href="timetable.html">Timetable</a>
                 </div>
             </div>
-        </div>
-</div> -->
 
-  <!-- <div class="login-form">
-<div class="container" id="container">
-	<div class="form-container sign-up-container">
-		<form action="#">
-			<h1>Create Account</h1>
+        </ul>
+    </nav>
+    <a href="login.html" class="cta"><button class="btn-purple">Login</button></a>
+    <!-- <a href="login.html" class="cta"><button class="btn-purple">Login</button></a> -->
+    <a onclick="openNav()" class="menu" href="#"><button class="menu-btn">
+            <h2><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg></h1>
+        </button></a>
+</header>
 
-			<span>or use your email for registration</span>
-			<input type="text" placeholder="Name" />
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<button>Sign Up</button>
-		</form>
-	</div>
-	<div class="form-container sign-in-container">
-		<form action="#">
-			<h1>Sign in</h1>
+<div id="mobile__menu" class="overlay">
+    <a class="close" onclick="closeNav()">&times;</a>
+    <div class="overlay__content">
+        <a class="list-link" href="index.html">Home</a>
+        <a class="list-link" href="services.html">Services</a>
+        <a class="list-link" href="services.html#pricing">Pricing</a>
+        <a class="list-link" href="contact.html">Contact</a>
+        <a class="list-link" href="bmi.html">BMI Calculator</a>
+        <a class="list-link" href="timetable.html">Timetable</a>
+        <!-- <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Pages
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
 
-			<span>or use your account</span>
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<a href="#">Forgot your password?</a>
-			<button>Sign In</button>
-		</form>
-	</div>
-	<div class="overlay-container">
-		<div class="overlay">
-			<div class="overlay-panel overlay-left">
-				<h1>Welcome Back!</h1>
-				<p>To keep connected with us please login with your personal info</p>
-				<button class="ghost" id="signIn">Sign In</button>
-			</div>
-			<div class="overlay-panel overlay-right">
-				<h1>Hello, Friend!</h1>
-				<p>Enter your personal details and start journey with us</p>
-				<button class="ghost" id="signUp">Sign Up</button>
-			</div>
-		</div>
-	</div>
+            </div>
+        </div> -->
+
+        <a href="login.html" class="cta"><button class="btn-purple">Login</button></a>
+    </div>
 </div>
-</div> -->
 
 
 
@@ -164,56 +119,45 @@
 
 
 
+
   <footer class="footer">
     <div class="container">
-      <div class="footer-row">
-        <div class="footer-col">
-          <h4>Fitclick</h4>
-          <!-- <ul>
-           <li><a href="#">about us</a></li>
-           <li><a href="#">our services</a></li>
-           <li><a href="#">privacy policy</a></li>
-           <li><a href="#">affiliate program</a></li>
-         </ul> -->
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis enim eum magni deleniti aut sunt
-            esse, sequi totam dolorem illo.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Ok</a></li>
-            <li><a href="#">ok</a></li>
-            <li><a href="#">ok</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Get Insights</h4>
-          <ul>
-            <li><a href="#">ok</a></li>
-            <li><a href="#">ok</a></li>
-            <li><a href="#">ok</a></li>
-            <li><a href="#">ok</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Get in touch</h4>
-          <ul>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Support</a></li>
-          </ul>
-          <!-- <div class="social-links">
-           <a href="#"><i class="fab fa-facebook-f"></i></a>
-           <a href="#"><i class="fab fa-twitter"></i></a>
-           <a href="#"><i class="fab fa-instagram"></i></a>
-           <a href="#"><i class="fab fa-linkedin-in"></i></a>
-         </div> -->
-        </div>
-      </div>
-    </div>
-  </footer>
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4>Fitclick</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis enim eum magni deleniti aut sunt
+                    esse, sequi totam dolorem illo.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="services.html#pricing">Pricing</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                    <li><a href="timetable.html">Timetable</a></li>
+                    <li><a href="bmi.html">BMI Calculator</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get in touch</h4>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                </ul>
 
+            </div>
+        </div>
+    </div>
+</footer>
 
   <script type="text/javascript" src="index.js"></script>
 </body>
